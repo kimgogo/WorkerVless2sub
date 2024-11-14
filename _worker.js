@@ -103,7 +103,7 @@ let subconfig = "https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/conf
 let noTLS = 'true'; //改为 true , 将不做域名判断 始终返回noTLS节点
 let link;
 let edgetunnel = 'ed';
-let RproxyIP = 'true';
+let RproxyIP = 'false';
 let proxyIPs = [//无法匹配到节点名就随机分配以下ProxyIP域名
 	'proxyip.multacom.fxxk.dedyn.io',
 	'proxyip.vultr.fxxk.dedyn.io',
