@@ -5,92 +5,26 @@ let mytoken= ['auto'];//快速订阅访问入口, 留空则不启动快速订阅
 
 // 设置优选地址，不带端口号默认443，TLS订阅生成
 let addresses = [
-	//'icook.tw:2053#官方优选域名',
-	//'cloudflare.cfgo.cc#优选官方线路',
-	'ct.090227.xyz#电信分流tls',
-	'cmcc.090227.xyz#移动分流tls',
+	'icook.tw:2053#官方优选域名',
+	'cloudflare.cfgo.cc#优选官方线路',
 ];
 
 // 设置优选地址api接口
 let addressesapi = [
-	//'https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressesapi.txt?proxyip=true', //可参考内容格式 自行搭建。
+	'https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressesapi.txt?proxyip=true', //可参考内容格式 自行搭建。
 	//'https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressesipv6api.txt', //IPv6优选内容格式 自行搭建。
 ];
 
 // 设置优选地址，不带端口号默认80，noTLS订阅生成
 let addressesnotls = [
-	//'www.visa.com.sg#官方优选域名',
-	//'www.wto.org:8080#官方优选域名',
-	//'www.who.int:8880#官方优选域名',
-	'time.cloudflare.com:80#资源核优选',
-	'shopify.com:80#资源核优选',
-	'time.is:80#资源核优选',
-	'icook.hk:80#资源核优选',
-	'icook.tw:80#资源核优选',
-	'ip.sb:80#资源核优选',
-	'japan.com:80#资源核优选',
-	'malaysia.com:80#资源核优选',
-	'russia.com:80#资源核优选',
-	'singapore.com:80#资源核优选',
-	'skk.moe:80#资源核优选',
-	'www.visa.com:80#资源核优选',
-	'www.visa.com.sg:80#资源核优选',
-	'www.visa.com.hk:80#资源核优选',
-	'www.visa.com.tw:80#资源核优选',
-	'www.visa.co.jp:80#资源核优选',
-	'www.visakorea.com:80#资源核优选',
-	'www.gco.gov.qa:80#资源核优选',
-	'www.gov.se:80#资源核优选',
-	'www.gov.ua:80#资源核优选',
-	'www.digitalocean.com:80#资源核优选',
-	'www.csgo.com:80#资源核优选',
-	'www.shopify.com:80#资源核优选',
-	'www.whoer.net:80#资源核优选',
-	'www.whatismyip.com:80#资源核优选',
-	'www.ipget.net:80#资源核优选',
-	'www.hugedomains.com:80#资源核优选',
-	'www.udacity.com:80#资源核优选',
-	'www.4chan.org:80#资源核优选',
-	'www.okcupid.com:80#资源核优选',
-	'www.glassdoor.com:80#资源核优选',
-	'www.udemy.com:80#资源核优选',
-	'www.baipiao.eu.org:80#资源核优选',
-	'cdn.anycast.eu.org:80#资源核优选',
-	'cdn-all.xn--b6gac.eu.org:80#资源核优选',
-	'cdn-b100.xn--b6gac.eu.org:80#资源核优选',
-	'xn--b6gac.eu.org:80#资源核优选',
-	'edgetunnel.anycast.eu.org:80#资源核优选',
-	'alejandracaiccedo.com:80#资源核优选',
-	'nc.gocada.co:80#资源核优选',
-	'log.bpminecraft.com:80#资源核优选',
-	'www.boba88slot.com:80#资源核优选',
-	'gur.gov.ua:80#资源核优选',
-	'www.zsu.gov.ua:80#资源核优选',
-	'www.iakeys.com:80#资源核优选',
-	'edtunnel-dgp.pages.dev:80#资源核优选',
-	'www.d-555.com:80#资源核优选',
-	'fbi.gov:80#资源核优选',
-	'*.cloudflare.182682.xyz#Cname域名优选',
-	'yx.887141.xyz#Cname域名优选',
-	'freeyx.cloudflare88.eu.org#Cname域名优选',
-	'8.889288.xyz#Cname域名优选',
-	'cfip.1323123.xyz#Cname域名优选',
-	'cf.515188.xyz#Cname域名优选',
-	'cf-st.annoy.eu.org#Cname域名优选',
-	'achk.cloudflarest.link#Cname域名优选',
-	'cf.0sm.com#Cname域名优选',
-	'gn.cfsaas.ltd#Cname域名优选',
-	'cf.13d7s.site#Cname域名优选',
-	'cnamefuckxxs.yuchen.icu#Cname域名优选',
-	'cf.877771.xyz#Cname域名优选',
-	'cf.345673.xyz#Cname域名优选',
-	'ct.090227.xyz#电信分流',
-	'cmcc.090227.xyz#移动分流',
+	'www.visa.com.sg#官方优选域名',
+	'www.wto.org:8080#官方优选域名',
+	'www.who.int:8880#官方优选域名',
 ];
 
 // 设置优选noTLS地址api接口
 let addressesnotlsapi = [
-	//'https://raw.githubusercontent.com/cmliu/CFcdnVmess2sub/main/addressesapi.txt', //可参考内容格式 自行搭建。
+	'https://raw.githubusercontent.com/cmliu/CFcdnVmess2sub/main/addressesapi.txt', //可参考内容格式 自行搭建。
 ];
 
 let DLS = 8;//速度下限
@@ -100,7 +34,7 @@ let addressescsv = [
 
 let subconverter = "SUBAPI.fxxk.dedyn.io"; //在线订阅转换后端，目前使用CM的订阅转换功能。支持自建psub 可自行搭建https://github.com/bulianglin/psub
 let subconfig = "https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/config/ACL4SSR_Online_Full_MultiMode.ini"; //订阅转换配置文件
-let noTLS = 'true'; //改为 true , 将不做域名判断 始终返回noTLS节点
+let noTLS = 'false'; //改为 true , 将不做域名判断 始终返回noTLS节点
 let link;
 let edgetunnel = 'ed';
 let RproxyIP = 'false';
