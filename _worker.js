@@ -82,6 +82,7 @@ let addressesnotls = [
 	'cnamefuckxxs.yuchen.icu#Cname域名优选',
 	'cf.877771.xyz#Cname域名优选',
 	'cf.345673.xyz#Cname域名优选',
+	'*.cf.090227.xyz#官方优选',
 ];
 
 // 设置优选noTLS地址api接口
